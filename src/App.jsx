@@ -1,11 +1,9 @@
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>hola mundo</div>
+      <h1>mi e-commerce</h1>
     </>
   )
 }
