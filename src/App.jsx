@@ -12,5 +12,3 @@ function App() {
 }
 
 export default App
-export { default as NavBar } from './components/NavBar'
-export { default as ItemListContainer } from './components/ItemListContainer'

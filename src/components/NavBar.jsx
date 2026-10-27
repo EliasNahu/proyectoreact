@@ -2,14 +2,14 @@ import './NavBar.css'
 import CartWidget from './CartWidget'
 
 
-function NavBar() {
+function NavBar (){
   return (
-    <div>
+    <div className="NavBar">
       <h1>A Gabarda</h1>
       <nav>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/products">Products</a></li>
+          <li><a href="/">Caballeros</a></li>
+          <li><a href="/products">Damas</a></li>
         </ul>
       </nav>
       <CartWidget/>
@@ -18,4 +18,3 @@ function NavBar() {
 }
 
 export default NavBar
-export { default as CartWidget } from './CartWidget'
