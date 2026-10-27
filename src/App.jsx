@@ -1,11 +1,16 @@
 import './App.css'
+import NavBar from './components/NavBar'
+import ItemListContainer from './components/ItemListContainer'
 
 function App() {
   return (
-    <>
-      <h1>mi e-commerce</h1>
-    </>
+    <div className="App">
+      <NavBar />
+      <ItemListContainer greeting="Bienvenido a A Gabarda" />
+    </div>
   )
 }
 
 export default App
+export { default as NavBar } from './components/NavBar'
+export { default as ItemListContainer } from './components/ItemListContainer'
