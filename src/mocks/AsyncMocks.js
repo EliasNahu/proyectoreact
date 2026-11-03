@@ -39,8 +39,8 @@ const productos = [
     id: 5,
     title: "Producto 5",
     price: 5000,
-    pictureUrl: "https://i.postimg.cc/5NzQzQzQ/5-9995bf3b-3f36-4990-bf6d-0a8691048dd4-900x.webp",
-    description: "zapatos de cuero con tacón alto, perfectos para ocasiones especiales y eventos formales.",
+    pictureUrl: "https://i.postimg.cc/sg05HVq6/01-f473a785-2c70-47d8-8b63-6863e75c7bad-900x.jpg",
+    description: "vestido largo de seda, ideal para ocasiones especiales y eventos formales.",
     stock: 12,
     category: "Mujeres"
     },
@@ -94,6 +94,6 @@ const productos = [
 
 export const getProducts = () => {
   return new Promise((resolve) => {
-    setTimeout(() => {resolve(items) }, 2000)
+    setTimeout(() => {resolve(productos) }, 2000)
   })
 };
