@@ -3,18 +3,20 @@ import Spinner from 'react-bootstrap/Spinner'
 import Alert from 'react-bootstrap/Alert'
 import { getProductById } from '../services/getProductById.js'
 import ItemDetail from './ItemDetail.jsx'
+import { useParams } from 'react-router-dom'
 
 function ItemDetailContainer({ productId = 1 }) {
   const [producto, setProducto] = useState(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
+  const {id}= useParams()
 
   useEffect(() => {
-    getProductById(productId)
+    getProductById(id)
       .then(p => setProducto(p))
       .catch(e => setError(e.message))
       .finally(() => setLoading(false))
-  }, [productId])
+  }, [id])
 
   if (loading) {
     return (

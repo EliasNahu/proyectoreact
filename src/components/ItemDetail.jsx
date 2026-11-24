@@ -23,7 +23,7 @@ function ItemDetail({ producto }) {
           <p className="fs-3 fw-bold">${producto.price.toFixed(2)}</p>
           <p>{producto.description}</p>
           <p className="text-muted">Stock disponible: {producto.stock}</p>
-          <ItemCount stock={producto.stock} initial={1} />
+          <ItemCount stock={producto.stock} initialCount={1} />
         </Col>
       </Row>
     </Container>

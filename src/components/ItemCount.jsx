@@ -7,9 +7,10 @@ function ItemCount ({initialCount = 1, stock}) {
 
     return (
     <ButtonGroup>
-      <Button variant="outline-secondary" onClick={() => setCount(count - 1)} disabled={count <= 1}>-</Button>
+      <Button variant="outline-secondary" className="px-3" onClick={() => setCount(count - 1)} disabled={count <= 1}>-</Button>
       <Button variant="light" disabled className="px-4 fw-bold">{count}</Button>
-      <Button variant="outline-secondary" onClick={() => setCount(count + 1)} disabled={count >= stock}>+</Button>
+      <Button variant="outline-secondary" className="px-3" onClick={() => setCount(count + 1)} disabled={count >= stock}>+</Button>
+      <Button variant="primary" className="ms-3" disabled={stock === 0}>Agregar al carrito</Button>
     </ButtonGroup>
     )
     
