@@ -9,10 +9,12 @@ function NavBar (){
 
   return (
     <div className="NavBar">
+      <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
       <h1>A Gabarda</h1>
+      </Link>
       <nav>
         <ul>
-          <Link to="/category/caballeros">Caballeros</Link>
+          <li><Link to="/category/caballeros">Caballeros</Link></li>
           <li><Link to="/category/damas">Damas</Link></li>
         </ul>
       </nav>

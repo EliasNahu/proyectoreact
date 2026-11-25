@@ -1,99 +1,99 @@
 export const productos = [
   {
-    id: 1, 
+    id:"1", 
     name: "Producto 1",
     price: 1000,
     img: "https://i.postimg.cc/wMLyQGGf/SQUARE-73d2214d-d873-4c0a-b3c8-ff7b34fee962-900x.webp",
     description: "Saco de lana con botones y bolsillos, ideal para mantenerte abrigada en los días fríos.",
     stock: 10,
-    category: "Damas"
+    category: "damas"
     },  
     {
-    id: 2,
+    id: "2",
     name: "Producto 2",
     price: 2000,
     img: "https://i.postimg.cc/kGTrznzB/Chat-GPTImage-Jun19-2026-10-29-18AM-900x.webp",
     description: "Vestido largo de seda, ideal para ocasiones especiales y eventos formales.",
     stock: 5,
-    category: "Damas"
+    category: "damas"
   },
   {
-    id: 3,
+    id: "3",
     name: "Producto 3",
     price: 3000,
     img: "https://i.postimg.cc/bvk7804P/Gemini-900x.webp",
     description: "Pollera larga de jean con botones y bolsillos, ideal para un look casual y cómodo.",
     stock: 15,
-    category: "Damas"
+    category: "damas"
   },
   {
-    id: 4,
+    id: "4",
     name: "Producto 4",
     price: 4000,
     img: "https://i.postimg.cc/dQ4zqVNh/1-9995bf3b-3f36-4990-bf6d-0a8691048dd4-900x.webp",
     description: "Bucaneras de cuero con detalles de hebilla, perfectas para un estilo elegante y sofisticado.",
     stock: 8,
-    category: "Damas"
+    category: "damas"
   },
   {
-    id: 5,
+    id: "5",
     name: "Producto 5",
     price: 5000,
     img: "https://i.postimg.cc/sg05HVq6/01-f473a785-2c70-47d8-8b63-6863e75c7bad-900x.jpg",
     description: "Vestido largo de seda, ideal para ocasiones especiales y eventos formales.",
     stock: 12,
-    category: "Damas"
+    category: "damas"
     },
      {
-    id: 6,
+    id: "6",
     name: "Producto 6",
     price: 5000,
     img: "https://i.postimg.cc/02LxsNr7/1-3250926d-743c-44e3-8936-86d865c41976.webp",
     description: "Chaqueta de lona con capucha y bolsillos, ideal para protegerte del viento y la lluvia.",
     stock: 12,
-    category: "Caballeros"
+    category: "caballeros"
     },
      {
-    id: 7,
+    id: "7",
     name: "Producto 7",
     price: 5000,
     img: "https://i.postimg.cc/xjmVP26D/C2997-Rudolf-darkblue-900x.webp",
     description: "Camisa de vestir de algodón con botones y cuello clásico, perfecta para un look formal y elegante.",
     stock: 4,
-    category: "Caballeros"
+    category: "caballeros"
     },
      {
-    id: 8,
+    id: "8",
     name: "Producto 8",
     price: 5000,
     img: "https://i.postimg.cc/FzSvdtBR/IMG-7027-900x.webp",
     description: "Pantalón de vestir de lana con corte recto, ideal para un look elegante y profesional.",
     stock: 2,
-    category: "Caballeros"
+    category: "caballeros"
     },
      {
-    id: 9,
+    id: "9",
     name: "Producto 9",
     price: 5000,
     img: "https://i.postimg.cc/sxY8C3L4/james-ribgebreid-katoenen-poloshirt-beige-deqalli-900x.jpg",
     description: "Camiseta de algodón , perfecta para un look casual y cómodo.",
     stock: 1,
-    category: "Caballeros"
+    category: "caballeros"
     },
      {  
-    id: 10,
+    id: "10",
     name: "Producto 10",
     price: 5000,
     img: "https://i.postimg.cc/Hndz5XSp/Adrian-Klassischem-und-hochwertige-zweifarbige-Lederstiefel-5-900x.webp",
     description: "Zapatos de cuero con suela de goma, ideales para un estilo casual y cómodo.",
     stock: 9,
-    category: "Caballeros"
+    category: "caballeros"
     }
 ]
 
 
 export const getProducts = () => {
   return new Promise((resolve) => {
-    setTimeout(() => {resolve(productos) }, 2000)
+    setTimeout(() => {resolve(productos) }, 1000)
   })
 };

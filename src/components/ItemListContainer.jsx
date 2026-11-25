@@ -3,17 +3,20 @@ import { useState, useEffect } from 'react'
 import Spinner from 'react-bootstrap/Spinner'
 import { getProducts } from '../mocks/AsyncMocks.js'
 import ItemList from './ItemList.jsx'
+import { useParams } from 'react-router-dom'
 
 function ItemListContainer({ greeting = "Bienvenido a A Gabarda" }) {
 
   const [items, setItems] = useState([])
   const [loading, setLoading] = useState(true)
+  const {categoryId} = useParams()
 
   useEffect(() => {
+    setLoading(true)
     getProducts()
-      .then(res => setItems(res))
+      .then(res => setItems(categoryId ? res.filter(product => product.category === categoryId) : res))
       .finally(() => setLoading(false))
-  }, [])
+  }, [categoryId])
 
   return (
     <div className="ItemListContainer">

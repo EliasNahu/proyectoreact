@@ -5,7 +5,7 @@ import { getProductById } from '../services/getProductById.js'
 import ItemDetail from './ItemDetail.jsx'
 import { useParams } from 'react-router-dom'
 
-function ItemDetailContainer({ productId = 1 }) {
+function ItemDetailContainer() {
   const [producto, setProducto] = useState(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)

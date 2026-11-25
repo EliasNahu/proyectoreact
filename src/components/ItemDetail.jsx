@@ -13,7 +13,7 @@ function ItemDetail({ producto }) {
             src={producto.img}
             alt={producto.name}
             className="img-fluid rounded shadow-sm w-100"
-            style={{ aspectRatio: '4/3', objectFit: 'cover' , maxHeight: '400px' }}
+            style={{ aspectRatio: '6/5', objectFit: 'cover' , maxHeight: '400px' }}
           />
         </Col>
 
